@@ -32,8 +32,7 @@ public class GenshinImpactNotif implements Observed{
     @Override
     public void notifyObservers() {
         for(Observer observer: players) {
-            observer.handleEvent(this.players);
+            observer.handleEvent(this.characters);
         }
-
     }
 }
