@@ -2,7 +2,6 @@ package javapatt;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observer;
 
 public class GenshinImpactNotif implements Observed{
     List<String> characters = new ArrayList<>();
@@ -20,13 +19,13 @@ public class GenshinImpactNotif implements Observed{
     }
 
     @Override
-    public void addCharacter(javapatt.Observer observer) {
-
+    public void addObserver(javapatt.Observer observer) {
+        this.players.add(observer);
     }
 
     @Override
-    public void removeCharacter(javapatt.Observer observer) {
-
+    public void removeObserver(javapatt.Observer observer) {
+        this.players.remove(observer);
     }
 
     @Override
