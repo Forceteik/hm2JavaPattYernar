@@ -11,7 +11,7 @@ public class Player implements Observer{
 
     @Override
     public void handleEvent(List<String> characters) {
-        System.out.println("Hello" + nickname + "\nCheck Genshin Impact. We updated characters"
-        + characters + "\n_________________________________________________________\n");
+        System.out.println("Hello, " + nickname + "\nCheck Genshin Impact. We updated characters "
+                + characters + "\n_________________________________________________________\n");
     }
 }
