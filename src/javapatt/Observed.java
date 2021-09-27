@@ -1,9 +1,9 @@
 package javapatt;
 
 public interface Observed {
-    public void addCharacter(Observer observer);
+    public void addObserver(Observer observer);
 
-    public void removeCharacter(Observer observer);
+    public void removeObserver(Observer observer);
 
     public void notifyObservers();
 }
